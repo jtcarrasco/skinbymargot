@@ -1,0 +1,35 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<div class="teaserimage hero">
+    <div class="teaserimage-image" {% if site.about_cover %}style="background-image: url({{ site.about_cover | prepend: site.baseurl }})"{% endif %}>
+        About Hero Image
+    </div>
+</div>
+
+<header class="blog-header">
+    {% if site.author_image %}
+      <a class="blog-logo" href="{{ '/about/' | prepend: site.baseurl }}" style="background-image: url('{{ site.author_image | prepend: site.baseurl }}')">{{ site.title }}</a>
+    {% endif %}
+    <h1 class="blog-title">{{ site.title }}</h1>
+    <h2 class="blog-subtitle">at Beauty at the Bay</h2>
+    <div class="custom-links">
+      <a href={{ "/" | prepend: site.baseurl }}>Home</a>
+      {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}"{% if social.desc %} title="{{ social.desc }}"{% endif %}>
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+</header>
+
+<main class="content" role="main">
+  <div class="about-body">
+    <p>Hi friends! I&rsquo;m so grateful you&rsquo;re here &mdash; I&rsquo;m a mom to a 9-year-old D&amp;D-loving creative kid, married to @jtcarrasco (my technical Swiss Army knife, family chef, and super dad), and when I&rsquo;m not adventuring with those two around the S.B. and beyond, you&rsquo;ll find me buried in a book or learning everything I can about skin. After a 12-year career in beauty (1st skin, 2nd hair), I&rsquo;ve re-entered the world of facials and I&rsquo;m so inspired to join the team at @beautyatthebayrb, where I&rsquo;m passionate about helping clients reach their goals through result-driven facials using @isclinical products, a range of modalities, and a dreamy face, neck, and shoulder massage. This work is as much about human connection as it is about skin &mdash; so if you&rsquo;re curious, DM me for a complimentary consultation and let&rsquo;s build a plan that works for you. Cheers to aging gracefully and loving the skin you&rsquo;re in! Love, M</p>
+  </div>
+</main>

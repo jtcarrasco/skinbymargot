@@ -1,0 +1,24 @@
+- title: Signature Facial
+  subtitle: Deep cleanse & hydration
+  description: Placeholder description — a customized facial treatment addressing your skin's specific needs, including cleansing, exfoliation, and hydration.
+  cost: "$95"
+
+- title: Chemical Peel
+  subtitle: Renew & resurface
+  description: Placeholder description — a resurfacing treatment to reduce fine lines, texture, and discoloration for brighter, smoother skin.
+  cost: "$120"
+
+- title: Microdermabrasion
+  subtitle: Gentle exfoliation
+  description: Placeholder description — mechanical exfoliation to remove dead skin cells and reveal a fresher, more even complexion.
+  cost: "$110"
+
+- title: LED Light Therapy
+  subtitle: Targeted skin repair
+  description: Placeholder description — light-based treatment to help calm inflammation, reduce breakouts, and support collagen production.
+  cost: "$65"
+
+- title: Extraction Facial
+  subtitle: Clarify & refresh
+  description: Placeholder description — a focused treatment for congested skin, combining steam, extractions, and calming aftercare.
+  cost: "$85"

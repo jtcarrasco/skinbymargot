@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="teaserimage hero">
+    <div class="teaserimage-image home-hero-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
+        Hero Image
+    </div>
+</div>
+
+<header class="blog-header">
+    {% if site.logo %}
+      <a class="blog-logo" href="{{site.url}}{{site.baseurl}}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
+    {% endif %}
+    <h1 class="blog-title">{{ site.title }}</h1>
+    <h2 class="blog-subtitle">at Beauty at the Bay</h2>
+    <div class="custom-links">
+      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
+      {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}"{% if social.desc %} title="{{ social.desc }}"{% endif %}>
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+</header>
+
+<main class="content" role="main">
+  <section class="treatments-menu">
+    {% for item in site.data.treatments %}
+      <article class="treatment-item">
+        <h2 class="treatment-title">{{ item.title }}</h2>
+        <h3 class="treatment-subtitle">{{ item.subtitle }}</h3>
+        <p class="treatment-description">{{ item.description }}</p>
+        <div class="treatment-cost">{{ item.cost }}</div>
+      </article>
+    {% endfor %}
+  </section>
+</main>

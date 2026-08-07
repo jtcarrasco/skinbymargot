@@ -1,6 +1,25 @@
 #-------------------------------
 # General Site Settings
 title: "Skin by Margot"
+description: > # this means to ignore newlines until "email:"
+   Site under construction.
+
+email: hello@example.com
+
+#blog logo
+logo: "/assets/images/hero/profile.webp"
+float_logo: false # true, false (default)
+
+# blog cover
+cover: "/assets/images/hero/about-hero.webp"
+about_cover: "/assets/images/hero/home-hero.webp"
+
+name: 'Skin by Margot'
+author: 'Skin by Margot'
+author_image: "/assets/images/hero/profile.webp"
+
+paginate: 5
+
 baseurl: ""
 url: ""
 
@@ -11,8 +30,9 @@ port: 4003
 #-------------------------------
 # Build Settings
 markdown: kramdown
-permalink: /:title
-plugins:
+gems:
+  - jemoji
+  - jekyll-paginate
   - jekyll-sitemap
 
 exclude:
@@ -21,3 +41,12 @@ exclude:
   - CLAUDE.md
   - README.md
   - vendor
+
+# social icons and sharing options
+social:
+  - icon: instagram
+    url: https://www.instagram.com/skinbymci/
+    desc: Follow on Instagram
+    share_url:
+    share_title:
+    share_link:
