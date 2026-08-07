@@ -14,16 +14,6 @@ layout: default
     {% endif %}
     <h1 class="blog-title">{{ site.title }}</h1>
     <h2 class="blog-subtitle">at Beauty at the Bay</h2>
-    <div class="custom-links">
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}"{% if social.desc %} title="{{ social.desc }}"{% endif %}>
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-        {% endif %}
-      {% endfor %}
-    </div>
 </header>
 
 <main class="content" role="main">

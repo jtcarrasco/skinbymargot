@@ -3,4 +3,25 @@
 {% if site.float_logo %}
   <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
 {% endif %}
+
+<nav class="top-nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu"><span></span><span></span><span></span></label>
+  <div class="top-nav-menu">
+    <div class="top-nav-links">
+      <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+      <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+    </div>
+    <div class="top-nav-social">
+      {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}"{% if social.desc %} title="{{ social.desc }}"{% endif %}>
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+
 <!-- header end -->

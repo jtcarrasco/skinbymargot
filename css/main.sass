@@ -124,7 +124,7 @@ body
     color: $color-text
   .blog-subtitle
     margin: 0 0 $rs
-    font-size: 15px
+    font-size: 16px
     text-align: center
     font-weight: 400
     letter-spacing: 1px
@@ -184,7 +184,7 @@ body
       line-height: 1.3
       color: #666665
     .post-meta
-      font-size: 14px
+      font-size: 16px
       color: #b3b3b1
       line-height: 30px
       a
@@ -204,7 +204,7 @@ body
   padding: 16px 0
   span
     color: #b3b3b1
-    font-size: $rs/8*5
+    font-size: 16px
     text-transform: uppercase
     letter-spacing: 1px
 
@@ -215,7 +215,7 @@ body
 .pagination
   text-align: center
   padding: $rs*3 0 0
-  font-size: $rs/4*3
+  font-size: 16px
   a
     color: #999
     text-decoration: none
@@ -230,7 +230,7 @@ body
   display: inline-block
   white-space: nowrap
   color: rgba(0,0,0,0.25)
-  font-size: 14px
+  font-size: 16px
   letter-spacing: -0.02em
   font-weight: 400
   font-style: normal
@@ -245,7 +245,7 @@ body
   padding: $rs*3 0
   width: 100%
   max-width: 640px
-  font-size: $rs/4*3
+  font-size: 16px
   text-align: center
   color: #999
   line-height: $rs*1.1
@@ -328,7 +328,7 @@ body
       font-weight: 400
       font-style: normal
       text-shadow: 0px 1px 4px rgba(0,0,0,0.25), 0px 0px 1px rgba(0,0,0,0.5)
-      font-size: 14px
+      font-size: 16px
       overflow: hidden
       font-family: $font-sans
       white-space: nowrap
@@ -375,7 +375,7 @@ body
       letter-spacing: -0.02em
       font-weight: 400
       font-style: normal
-      font-size: 14px
+      font-size: 16px
       overflow: hidden
       font-family: $font-sans
       white-space: nowrap
@@ -511,7 +511,7 @@ body
         margin: 0
         padding-left: 100px
       p
-        font-size: 14px
+        font-size: 16px
         line-height: 1.3
         font-weight: 400
         padding: 0
@@ -532,7 +532,7 @@ body
         padding: 0
         color: #333
         text-align: left
-        font-size: 14px
+        font-size: 16px
         line-height: 1.3
         color: #999
         a
@@ -606,7 +606,7 @@ body
       display: inline-block
       text-align: center
       letter-spacing: -0.02em
-      font-size: 15px
+      font-size: 16px
       font-weight: 400
       font-style: normal
       text-decoration: none
@@ -627,7 +627,7 @@ body
 
 pre,
 code
-  font-size: 15px
+  font-size: 16px
   border: 1px solid #e8e8e8
   border-radius: 3px
   background-color: #eef
@@ -663,14 +663,14 @@ pre
     color: $color-text
   .treatment-subtitle
     margin: $rs/4 0 $rs
-    font-size: 14px
+    font-size: 16px
     font-weight: 400
     font-style: italic
     letter-spacing: 0.5px
     color: $color-accent
   .treatment-description
     margin: 0 0 $rs
-    font-size: 15px
+    font-size: 16px
     line-height: 1.5
     color: $color-text-muted
   .treatment-cost
@@ -689,5 +689,104 @@ pre
   p
     margin: 0 0 $rs
     text-align: left
-  .about-links
-    margin: 0
+
+// Top nav
+.top-nav
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  display: flex
+  align-items: center
+  padding: $rs $rs*1.5
+  @include box-sizing(border-box)
+
+  .nav-toggle-checkbox
+    display: none
+
+  .nav-toggle-label
+    display: none
+    cursor: pointer
+    width: 24px
+    height: 18px
+    position: relative
+    flex-shrink: 0
+    span
+      display: block
+      position: absolute
+      height: 2px
+      width: 100%
+      left: 0
+      background: $color-text
+      border-radius: 2px
+      box-shadow: 0 1px 3px rgba(255,255,255,0.5)
+      &:nth-child(1)
+        top: 0
+      &:nth-child(2)
+        top: 8px
+      &:nth-child(3)
+        top: 16px
+
+  .top-nav-menu
+    display: flex
+    flex: 1
+    justify-content: space-between
+    align-items: center
+
+  .top-nav-links
+    display: flex
+    gap: $rs
+    a
+      color: $color-text
+      text-decoration: none
+      font-size: 16px
+      letter-spacing: 1px
+      text-shadow: 0 1px 3px rgba(255,255,255,0.5)
+      &:hover
+        opacity: 0.7
+
+  .top-nav-social
+    display: flex
+    gap: $rs/2
+    a
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      width: 32px
+      height: 32px
+      color: $color-text
+      font-size: 32px
+      text-decoration: none
+      text-shadow: 0 1px 3px rgba(255,255,255,0.5)
+      &:hover
+        opacity: 0.7
+
+  @include respond-to(700)
+    .nav-toggle-label
+      display: block
+      margin-right: $rs
+    .top-nav-menu
+      display: none
+      flex: none
+      flex-direction: column
+      align-items: flex-start
+      gap: $rs/2
+      position: absolute
+      top: 100%
+      left: $rs*1.5
+      right: $rs*1.5
+      margin-top: $rs/2
+      background: #fff
+      padding: $rs
+      @include box-sizing(border-box)
+      border-radius: 4px
+      -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+      -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+    .top-nav-links,
+    .top-nav-social
+      flex-direction: column
+      align-items: flex-start
+    .nav-toggle-checkbox:checked ~ .top-nav-menu
+      display: flex
