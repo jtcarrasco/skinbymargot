@@ -14,18 +14,18 @@
   subtitle: 30 Minutes
   description: >
     A targeted skin refresh for those short on time. This express treatment includes a luxurious
-    double cleanse, customized exfoliation, a masque, advanced modalities, and professional
-    finishing skincare selected for your skin's needs. Perfect for maintaining healthy, radiant
-    glow. Appropriate for most skin types.
+    double cleanse, customized exfoliation, advanced modalities, and professional finishing
+    products selected for your skin's needs. Perfect for maintaining healthy, radiant skin.
+    Appropriate for most skin types.
   cost: "$150"
 
 - title: DiamondGlow™ Facial
   subtitle: 60 Minutes
   description: >
     Experience an advanced 3-in-1 DiamondGlow™ treatment that exfoliates, extracts, and infuses
-    the skin with targeted serums. Combined with customized skincare, select advanced modalities,
-    and sculpting massage techniques, this treatment leaves your skin visibly smoother, brighter,
-    hydrated, and beautifully luminous. Appropriate for most skin types.
+    the skin with targeted serums. Combined with customized treatment products, advanced
+    modalities, and sculpting massage techniques, this treatment leaves your skin visibly
+    smoother, brighter, hydrated, and beautifully luminous. Appropriate for most skin types.
   cost: "$250"
 
 - title: DiamondGlow™ Express
@@ -40,9 +40,9 @@
   subtitle: 60 Minutes
   description: >
     A revitalizing treatment featuring precise exfoliation and effective extractions through
-    HydroDiamond™ technology, complemented by customized skincare, targeted modalities, sculpting
-    massage techniques, masques, serums, and intensive hydration. Skin is left smooth, polished,
-    invigorated, and beautifully refreshed. Appropriate for most skin types.
+    HydroDiamond™ technology, complemented by customized skincare products, targeted modalities,
+    sculpting massage techniques, masques, serums, and intensive hydration. Skin is left smooth,
+    polished, invigorated, and beautifully refreshed. Appropriate for most skin types.
   cost: "$250"
 
 - title: HydroDiamond™ Express
