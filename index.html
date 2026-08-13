@@ -17,8 +17,21 @@ layout: default
 </header>
 
 <main class="content" role="main">
+  <h2 class="treatments-heading">Facial Treatments</h2>
   <section class="treatments-menu">
     {% for item in site.data.treatments %}
+      <article class="treatment-item">
+        <h2 class="treatment-title">{{ item.title }}</h2>
+        <h3 class="treatment-subtitle">{{ item.subtitle }}</h3>
+        <p class="treatment-description">{{ item.description }}</p>
+        <div class="treatment-cost">{{ item.cost }}</div>
+      </article>
+    {% endfor %}
+  </section>
+
+  <h2 class="treatments-heading">Special Offers</h2>
+  <section class="treatments-menu">
+    {% for item in site.data.offers %}
       <article class="treatment-item">
         <h2 class="treatment-title">{{ item.title }}</h2>
         <h3 class="treatment-subtitle">{{ item.subtitle }}</h3>

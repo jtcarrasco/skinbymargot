@@ -1,24 +1,55 @@
-- title: Signature Facial
-  subtitle: Deep cleanse & hydration
-  description: Placeholder description — a customized facial treatment addressing your skin's specific needs, including cleansing, exfoliation, and hydration.
-  cost: "$95"
+- title: Signature Customized Facial
+  subtitle: 60 Minutes
+  description: >
+    Our signature facial is thoughtfully customized to your skin's unique needs, combining a
+    luxurious spa experience with a results-driven approach. Using professional iS Clinical
+    medical-grade skincare, this treatment cleanses, exfoliates, treats, hydrates, and protects.
+    Your experience may include a triple cleanse, customized exfoliation, extractions, targeted
+    masques, cold globes, red light therapy, oxygen therapy, and sculpting massage techniques.
+    Finished with targeted serums, moisturizer, and SPF for skin that feels nourished, hydrated,
+    and beautifully refreshed. Appropriate for most skin types.
+  cost: "$200"
 
-- title: Chemical Peel
-  subtitle: Renew & resurface
-  description: Placeholder description — a resurfacing treatment to reduce fine lines, texture, and discoloration for brighter, smoother skin.
-  cost: "$120"
+- title: Signature Express Facial
+  subtitle: 30 Minutes
+  description: >
+    A targeted skin refresh for those short on time. This express treatment includes a luxurious
+    double cleanse, customized exfoliation, a masque, advanced modalities, and professional
+    finishing skincare selected for your skin's needs. Perfect for maintaining healthy, radiant
+    glow. Appropriate for most skin types.
+  cost: "$150"
 
-- title: Microdermabrasion
-  subtitle: Gentle exfoliation
-  description: Placeholder description — mechanical exfoliation to remove dead skin cells and reveal a fresher, more even complexion.
-  cost: "$110"
+- title: DiamondGlow™ Facial
+  subtitle: 60 Minutes
+  description: >
+    Experience an advanced 3-in-1 DiamondGlow™ treatment that exfoliates, extracts, and infuses
+    the skin with targeted serums. Combined with customized skincare, select advanced modalities,
+    and sculpting massage techniques, this treatment leaves your skin visibly smoother, brighter,
+    hydrated, and beautifully luminous. Appropriate for most skin types.
+  cost: "$250"
 
-- title: LED Light Therapy
-  subtitle: Targeted skin repair
-  description: Placeholder description — light-based treatment to help calm inflammation, reduce breakouts, and support collagen production.
-  cost: "$65"
+- title: DiamondGlow™ Express
+  subtitle: 30 Minutes
+  description: >
+    Enjoy the benefits of DiamondGlow™ technology in a streamlined 30-minute treatment. Designed
+    to exfoliate, extract, and infuse the skin with targeted serums, this express facial leaves
+    your complexion polished, refreshed, and radiant. Perfect for a quick glow and refresh.
+  cost: "$150"
 
-- title: Extraction Facial
-  subtitle: Clarify & refresh
-  description: Placeholder description — a focused treatment for congested skin, combining steam, extractions, and calming aftercare.
-  cost: "$85"
+- title: HydroDiamond™ Facial
+  subtitle: 60 Minutes
+  description: >
+    A revitalizing treatment featuring precise exfoliation and effective extractions through
+    HydroDiamond™ technology, complemented by customized skincare, targeted modalities, sculpting
+    massage techniques, masques, serums, and intensive hydration. Skin is left smooth, polished,
+    invigorated, and beautifully refreshed. Appropriate for most skin types.
+  cost: "$250"
+
+- title: HydroDiamond™ Express
+  subtitle: 30 Minutes
+  description: >
+    A streamlined HydroDiamond™ treatment combining precise exfoliation and effective extractions
+    with a customized masque, targeted serums, hydration, and protective finishing skincare.
+    Ideal for maintaining a smooth, refreshed, radiant complexion. Appropriate for most skin
+    types.
+  cost: "$150"

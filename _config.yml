@@ -41,6 +41,10 @@ exclude:
   - CLAUDE.md
   - README.md
   - vendor
+  - .git
+  - .jekyll-cache
+  - .bundle
+  - .gstack
 
 # social icons and sharing options
 social:
